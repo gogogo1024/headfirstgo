@@ -1,11 +1,3 @@
-/**
- * @author [gogogo1024]
- * @email [jxycbjhc@163.com]
- * @create date 2022-08-22 12:10:28
- * @modify date 2022-08-22 12:10:28
- * @desc [description] 映射
- */
-
 package headfirstgo
 
 import (
@@ -13,8 +5,9 @@ import (
 	"log"
 )
 
-func Count() {
-	lines,err := GetString("votes.txt")
+// 映射统计
+func Count(path string) {
+	lines,err := GetString(path)
 	if err != nil {
 		log.Fatal(err)
 	}

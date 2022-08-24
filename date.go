@@ -1,11 +1,3 @@
-/**
- * @author [gogogo1024]
- * @email [jxycbjhc@163.com]
- * @create date 2022-08-22 12:10:28
- * @modify date 2022-08-22 12:10:28
- * @desc [description] 属性访问器 getter,setter
- */
-
 // 日历和时间设置
 package headfirstgo
 

@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// 读取文件
 func ReadFile(path string) {
 	fmt.Println("read file start")
 	file, err := os.Open(path)

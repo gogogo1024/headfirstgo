@@ -1,10 +1,4 @@
-/**
- * @author [gogogo1024]
- * @email [jxycbjhc@163.com]
- * @create date 2022-08-23 16:07:59
- * @modify date 2022-08-23 16:07:59
- * @desc [description] 接口
- */
+// 接口
 package headfirstgo
 
 import (

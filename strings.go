@@ -5,6 +5,7 @@ import (
 	"os"
 )
 
+// 读取文件，返回字符串数组
 func GetString(path string) ([]string, error) {
 	var lines []string
 	file, err := os.Open(path)
