@@ -22,6 +22,7 @@ func ScanDir(path string)  {
 		}
 	}
 }
+
 // 利用recover恢复panic
 func ReportPanic(){
 	p:=recover()
