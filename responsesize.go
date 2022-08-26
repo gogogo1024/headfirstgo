@@ -8,8 +8,13 @@ import (
 	"net/http"
 )
 
+type Page struct {
+	URL string
+	Size int
+}
+
 // 获取url页面response大小，并发送给channel
-func ResponseSize(url string, channel chan int) {
+func ResponseSize(url string, channel chan Page) {
 	fmt.Println("getting", url)
 	resp, err := http.Get(url)
 	if err != nil {
@@ -20,6 +25,6 @@ func ResponseSize(url string, channel chan int) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	channel <- len(body)
+	channel <- Page{URL:url,Size:len(body)}
 
 }
